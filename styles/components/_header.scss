@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+
+  & > div:not(:first-child) {
+    text-align: center;
+    font-size: $header-font-size;
+  }
+
+  &__logo {
+    grid-column-start: 1;
+    grid-column-end: 7;
+  }
+
+  &_about {
+    grid-column-start: 8;
+    &__component {
+      @include underline-and-pointer;
+    }
+  }
+
+  &_projects {
+    &__component {
+      @include underline-and-pointer;
+    }
+  }
+
+  &_contact {
+    &__component {
+      @include underline-and-pointer;
+    }
+  }
+
+  &_learn {
+    &__component {
+      @include underline-and-pointer;
+    }
+  }
+}

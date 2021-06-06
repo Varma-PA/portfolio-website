@@ -1,0 +1,7 @@
+@mixin underline-and-pointer {
+  &:hover {
+    text-decoration: underline;
+  }
+
+  cursor: pointer;
+}
