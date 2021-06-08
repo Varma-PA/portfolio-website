@@ -1,41 +1,59 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
+@import "../base/animation";
 
 .header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   justify-content: center;
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 
   & > div:not(:first-child) {
     text-align: center;
     font-size: $header-font-size;
   }
 
-  &__logo {
+  &_logo {
     grid-column-start: 1;
     grid-column-end: 7;
+    &__component {
+      cursor: pointer;
+      // &:hover {
+      //   animation-name: logoIncrease;
+      //   animation-duration: 2s;
+      // }
+    }
   }
 
   &_about {
     grid-column-start: 8;
+    color: $orange-color;
     &__component {
       @include underline-and-pointer;
     }
   }
 
   &_projects {
+    color: $blue-color;
     &__component {
       @include underline-and-pointer;
     }
   }
 
   &_contact {
+    color: $blue-color;
     &__component {
       @include underline-and-pointer;
     }
   }
 
   &_learn {
+    color: $blue-color;
     &__component {
       @include underline-and-pointer;
     }

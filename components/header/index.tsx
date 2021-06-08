@@ -1,10 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import MainLogo from "../icons/main-icon-component";
 
 const Header = () => {
   return (
     <div className="header">
-      <div className="header__logo">Logo</div>
+      <div className="header_logo">
+        <div className="header_logo__component">
+          <Link href="/">
+            <MainLogo height={40} width={40} />
+          </Link>
+        </div>
+      </div>
       <div className="header_about">
         <div className="header_about__component">
           <Link href="/about">About</Link>
