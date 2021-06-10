@@ -1,5 +1,5 @@
 import React from "react";
-import Moon from "../../../../components/icons/moon-picture";
+// import Moon from "../../../../components/icons/moon-picture";
 
 const FirstBox = () => {
   return (
@@ -7,9 +7,9 @@ const FirstBox = () => {
       <div>
         <h2>Namaste</h2>
       </div>
-      <div className="moon">
+      {/* <div className="moon">
         <Moon height={250} />
-      </div>
+      </div> */}
     </div>
   );
 };

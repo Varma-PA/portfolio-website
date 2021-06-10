@@ -1,3 +1,5 @@
+@import "../base/animation";
+
 .homepage {
   //   height: 100vh;
   //   width: 100vh;
@@ -39,7 +41,22 @@
 }
 
 .moon {
+  // position: absolute;
+  // left: 54rem;
+  // top: 8rem;
+
+  animation: moon-sun-spin 10s infinite linear;
+  width: 250px;
+  height: 250px;
+}
+
+.moon-container {
   position: absolute;
   left: 54rem;
   top: 8rem;
+
+  //   object-fit: cover;
+  height: 250px;
+  width: 125px;
+  overflow: hidden;
 }
